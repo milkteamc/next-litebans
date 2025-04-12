@@ -1,26 +1,25 @@
 export const siteConfig = {
-  title: "Next Litebans",
-  logo: "/logo.webp",
-  favicon: "/logo.webp",
+  title: "奶茶伺服器封禁列表",
+  logo: "/milktea.webp",
+  favicon: "/milktea.webp",
   languages: {
     available: [
-      "en",
-      "es",
+      "zh",
     ],
-    default: "en",
+    default: "zh",
   },
   console: {
-    name: "Console", // Just for filter badge
+    name: "控制臺", // Just for filter badge
     uuid: "[Console]", // Use for filter url and to check if a punishment is made from the Console. In some versions of Litebans, the console uuid is "CONSOLE".
     icon: "/console.webp",
     body: "/console-body.webp",
     bust: "/console-bust.webp",
   },
-  defaultPlayerLookup: "YoSoyVilla",
+  defaultPlayerLookup: "Milk_bubble2",
   // When enabled, body and bust images will show a steve skin
   bedrock: {
-    enabled: false,
-    prefix: "BP_",
+    enabled: true,
+    prefix: ".",
   },
   openGraph: {
     dateFormat: "yyyy-MM-dd hh:mm:ss",
@@ -28,126 +27,126 @@ export const siteConfig = {
       main: {
         // Placeholders: {total}, {bans}, {mutes}, {kicks}, {warns}
         description: `
-        next-litebans punishment web interface.
+        奶茶伺服器封禁列表
 
-        Total punishments: {total}
+        總懲罰數量： {total}
 
-          🚫 Bans: {bans}
-          🔇 Mutes: {mutes}
-          ⚠️ Warns: {warns}
-          ❌ Kicks: {kicks}
+          🚫 封禁： {bans}
+          🔇 靜音： {mutes}
+          ⚠️ 警告： {warns}
+          ❌ 踢出： {kicks}
         `
       },
       history: {
         // Placeholders: {total}, {bans}, {mutes}, {kicks}, {warns}
         description: `
-        Total punishments: {total}
+        總懲罰數量： {total}
 
-          🚫 Bans: {bans}
-          🔇 Mutes: {mutes}
-          ⚠️ Warns: {warns}
-          ❌ Kicks: {kicks}
+          🚫 封禁： {bans}
+          🔇 靜音： {mutes}
+          ⚠️ 警告： {warns}
+          ❌ 踢出： {kicks}
         `
       },
       player: {
         // Placeholders: {name}, {total}, {bans}, {mutes}, {kicks}, {warns}
         description: `
-        {name}'s punishments.
+        {name} 的懲罰
 
-        Total punishments: {total}
+        總懲罰數量： {total}
 
-          🚫 Bans: {bans}
-          🔇 Mutes: {mutes}
-          ⚠️ Warns: {warns}
-          ❌ Kicks: {kicks}
+          🚫 封禁： {bans}
+          🔇 靜音： {mutes}
+          ⚠️ 警告： {warns}
+          ❌ 踢出： {kicks}
         `,
         bans: {
           description: `
-          {name}'s bans.
+          {name} 的封禁紀錄
 
-          Total bans: {total}
+          總封禁數量： {total}
           `,
         },
         mutes: {
           description: `
-          {name}'s mutes.
+          {name} 的靜音紀錄
 
-          Total mutes: {total}
+          總靜音數量： {total}
           `,
         },
         warns: {
           description: `
-          {name}'s warns.
+          {name} 的警告紀錄
 
-          Total warns: {total}
+          總警告數量： {total}
           `,
         },
         kicks: {
           description: `
-          {name}'s kicks.
+          {name} 的踢出紀錄
 
-          Total kicks: {total}
+          總踢出數量： {total}
           `,
         },
       },
       bans: {
         // Placeholders: {total}
-        description: "Total bans: {total}"
+        description: "總封禁數量： {total}"
       },
       mutes: {
         // Placeholders: {total}
-        description: "Total mutes: {total}"
+        description: "總靜音數量： {total}"
       },
       warns: {
         // Placeholders: {total}
-        description: "Total warns: {total}"
+        description: "總警告數量： {total}"
       },
       kicks: {
         // Placeholders: {total}
-        description: "Total kicks: {total}"
+        description: "總踢出數量： {total}"
       },
     },
     punishments: {
       ban: {
         // Placeholders: {name}, {staff}, {reason}, {time}, {duration}, {server}
         description: `
-        👤 User: {name}
-        👮 Staff: {staff}
+        👤 用戶： {name}
+        👮 管理員： {staff}
 
-        📜 Reason: {reason}
-        🕒 Date: {time}
-        ⌛ Duration: {duration}
+        📜 原因： {reason}
+        🕒 時間： {time}
+        ⌛ 持續時間： {duration}
         `
       },
       mute: {
         // Placeholders: {name}, {staff}, {reason}, {time}, {duration}, {server}
         description: `
-        👤 User: {name}
-        👮 Staff: {staff}
+        👤 用戶： {name}
+        👮 管理員： {staff}
 
-        📜 Reason: {reason}
-        🕒 Date: {time}
-        ⌛ Duration: {duration}
+        📜 原因： {reason}
+        🕒 時間： {time}
+        ⌛ 持續時間： {duration}
         `
       },
       warn: {
         // Placeholders: {name}, {staff}, {reason}, {time}, {server}
         description: `
-        👤 User: {name}
-        👮 Staff: {staff}
+        👤 用戶： {name}
+        👮 管理員： {staff}
 
-        📜 Reason: {reason}
-        🕒 Date: {time}
+        📜 原因： {reason}
+        🕒 時間： {time}
         `
       },
       kick: {
         // Placeholders: {name}, {staff}, {reason}, {time}, {server}
         description: `
-        👤 User: {name}
-        👮 Staff: {staff}
+        👤 用戶： {name}
+        👮 管理員： {staff}
 
-        📜 Reason: {reason}
-        🕒 Date: {time}
+        📜 原因： {reason}
+        🕒 時間： {time}
         `
       }
     }
