@@ -18,7 +18,7 @@ export const siteConfig = {
   defaultPlayerLookup: "Milk_bubble2",
   // When enabled, body and bust images will show a steve skin
   bedrock: {
-    enabled: true,
+    enabled: false,
     prefix: ".",
   },
   openGraph: {

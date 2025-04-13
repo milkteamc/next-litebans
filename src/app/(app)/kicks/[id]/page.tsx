@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
       id: params.id
     }),
     openGraph: {
-      images: `https://minotar.net/helm/${kick?.uuid ?? kick?.name}`,
+      images: `https://minotar.net/helm/${kick?.name}`,
       description: p(siteConfig.openGraph.punishments.kick.description, {
         name: kick.name,
         staff: kick.banned_by_name,

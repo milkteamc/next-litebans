@@ -1,13 +1,15 @@
 import Link from "next/link";
+import { FaDiscord } from "react-icons/fa";
 
 import { cn } from "@/lib/utils";
 
 import { Icons } from "@/components/layout/icons";
 import { buttonVariants } from "@/components/ui/button";
+import { FaD } from "react-icons/fa6";
 
 export const GithubButton = () => (
   <Link
-    href="https://github.com/yosoyvillaa/next-litebans"
+    href="https://discord.gg/22DxRjrXRv"
     target="_blank"
     rel="noreferrer"
   >
@@ -19,8 +21,8 @@ export const GithubButton = () => (
         "w-9 px-0"
       )}
     >
-      <Icons.gitHub className="h-4 w-4" />
-      <span className="sr-only">GitHub</span>
+      <FaDiscord className="h-4 w-4" />
+      <span className="sr-only">Discord</span>
     </div>
   </Link>
 )

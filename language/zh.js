@@ -12,8 +12,8 @@ const language = {
       plural: "封禁紀錄"
     },
     mutes: {
-      singular: "靜音",
-      plural: "靜音紀錄"
+      singular: "禁言",
+      plural: "禁言紀錄"
     },
     kicks: {
       singular: "踢出",
@@ -30,14 +30,14 @@ const language = {
     reason: "原因",
     date: "日期",
     expires: "到期日",
-    originServer: "原始伺服器",
+    originServer: "分流",
     notified: "已通知",
   },
   pages: {
     home: {
       title: "首頁",
       // Placeholders: {total}, {bans}, {mutes}, {kicks}, {warns}
-      subtitle: "奶茶伺服器封禁列表"
+      subtitle: "可以在此查看我們 {total} 個懲罰紀錄，如需申訴請前往我們 Discord 群組開啟客服單，並提供你的 ID，謝謝！"
     },
     history: {
       title: "歷史紀錄",
@@ -91,18 +91,18 @@ const language = {
       }
     },
     mutes: {
-      title: "靜音",
+      title: "禁言",
       // Placeholders: {total}
-      subtitle: "靜音數量： {total}",
+      subtitle: "禁言數量： {total}",
       table: {
         heads: {
           player: "玩家",
-          by: "靜音者",
+          by: "禁言者",
           reason: "原因",
           date: "日期",
           expires: "到期日"
         },
-        permanent: "永久靜音",
+        permanent: "永久禁言",
         active: {
           true: "有效",
           temporal: "臨時",
@@ -110,9 +110,9 @@ const language = {
         }
       },
       info: {
-        title: "靜音 #{id}",
+        title: "禁言 #{id}",
         badges: {
-          ipmute: "IP 靜音",
+          ipmute: "IP 禁言",
           active: "有效",
           expired: "已過期",
           permanent: "永久封禁",
