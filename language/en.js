@@ -1,6 +1,6 @@
 const language = {
   info: {
-    country_code: "GB",
+    country_code: "US",
     lang_name: "English"
   },
   site: {
