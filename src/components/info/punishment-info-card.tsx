@@ -42,7 +42,7 @@ export const PunishmentInfoCard = async ({ punishment, children }: PunishmentInf
         </Link>
         <div className="flex space-x-2 justify-center">
           <img 
-            src={`https://visage.surgeplay.com/face/128/${punishment.name}`}
+            src={`https://api.creepernation.net/avatar/${punishment.name}?size=128`}
             alt={`${punishment.name}'s avatar`}
             width={28}
             height={28}
@@ -77,7 +77,7 @@ export const PunishmentInfoCard = async ({ punishment, children }: PunishmentInf
             <ConsoleAvatar name={punishment.banned_by_name!} size={28} className="!mx-0 mr-1" />
             :
             <img 
-              src={`https://visage.surgeplay.com/face/128/${punishment.banned_by_uuid}`}
+              src={`https://api.creepernation.net/avatar/${punishment.banned_by_name}?size=128`}
               alt={`${punishment.banned_by_name}'s avatar`}
               width={28}
               height={28}
