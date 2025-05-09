@@ -16,7 +16,7 @@ export const PlayerAvatar = ({
   className
 }: PlayerAvatarProps) => (
   <Image 
-    src={`https://api.creepernation.net/avatar/${name}`}
+    src={`https://minotar.net/helm/${name}`}
     alt={`${name}'s avatar`}
     width={size ?? 32}
     height={size ?? 32}
